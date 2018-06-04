@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Head Spy Scroll</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <style>
+    /* Show it is fixed to the top */
+
+    body {
+      min-height: 75rem;
+      padding-top: 4.5rem;
+    }
+  </style>
+</head>
+
+<body id="page-top" onload="init();">
+
+  <canvas id="compare" width="320" height="240" style="display:none"></canvas>
+  <video id="vid" autoplay loop width="320" height="240" style="display:none"></video>
+  <div id="Inner">
+    
+    <h1>Lorem Ipsum</h1>
+    <h4>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h4>
+    <h5>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</h5>
+    
+    
+    <hr>
+    
+    <div id="Content">
+    <div class="boxed"><div id="lipsum">
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod viverra ante. Nullam tristique elementum sem sed tempus. Integer finibus diam id justo volutpat consectetur. Vivamus neque quam, mollis eget dictum a, pulvinar at lacus. In vel aliquet massa, sit amet luctus neque. Sed condimentum pharetra ante, tempor condimentum metus dapibus gravida. Fusce euismod vulputate libero vel convallis. Vestibulum nunc diam, maximus eget facilisis eget, consectetur eget ipsum. Proin eu pharetra quam. In a dignissim massa, euismod tristique orci. Donec facilisis nulla eros, ac suscipit lectus consectetur sit amet. Etiam vel sapien in velit laoreet viverra in ac nulla. Nam libero est, accumsan id finibus ac, mattis in est. Duis nec metus ut mi dictum tincidunt id eu velit. Cras congue dapibus sapien, vel tincidunt ipsum volutpat quis. Curabitur faucibus erat non mauris semper sagittis.
+    </p>
+    <p>
+    Maecenas eget euismod sapien. Aenean sed turpis et velit cursus condimentum. In hac habitasse platea dictumst. Donec ac feugiat velit, eget efficitur odio. Etiam vehicula, massa vel sodales convallis, enim leo efficitur arcu, ut facilisis urna orci non nisi. Nam malesuada ligula a tortor bibendum, sit amet porttitor dolor consequat. Nunc augue arcu, vehicula at purus eget, gravida mattis mauris. Praesent maximus metus at odio condimentum tempus. Suspendisse potenti. Duis dictum ex nec erat imperdiet sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec in metus quis augue ultrices eleifend. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis non risus felis. Vestibulum ut placerat neque, non condimentum enim.
+    </p>
+    <p>
+    Integer elementum fringilla tincidunt. Morbi eget tellus a dolor hendrerit porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam non tempor mi. Vestibulum in erat nulla. Sed vestibulum porttitor efficitur. Integer pretium nisl nunc. Mauris iaculis ligula sit amet sem vulputate, vel lobortis turpis vehicula. Pellentesque placerat fermentum felis placerat maximus.
+    </p>
+    <p>
+    Nam id ultricies sapien. Pellentesque et urna nibh. Curabitur malesuada eros molestie maximus mattis. Suspendisse mattis varius nulla quis hendrerit. Nam dapibus tincidunt mauris at posuere. Aenean consequat nisl nec vulputate vehicula. Fusce a nibh quis elit suscipit ultricies.
+    </p>
+    <p>
+    Morbi rutrum lacus sed ultrices semper. Nam vestibulum turpis urna, et convallis libero maximus in. Donec elementum lacinia tortor, eu sodales diam. Aliquam egestas nisl massa, eget vulputate magna imperdiet non. Quisque non mattis dolor, venenatis rutrum lectus. Praesent enim odio, venenatis a suscipit nec, aliquet non sapien. Vivamus rutrum nisi nec ipsum laoreet, facilisis commodo tortor tristique. Duis ut dictum urna. Aliquam aliquet lacinia nisi id pellentesque. Cras finibus leo orci, vel euismod lacus faucibus non. Morbi imperdiet lacinia ligula eget tempus. Mauris rhoncus malesuada placerat. Integer consectetur porta tellus nec bibendum. Phasellus rutrum urna sit amet tincidunt facilisis.
+    </p></div>
+    <div id="generated">Generated 5 paragraphs, 446 words, 3073 bytes of <a href="https://www.lipsum.com/" title="Lorem Ipsum">Lorem Ipsum</a></div>
+    </div>
+    
+    <hr>
+    
+    
+    </div>
+
+    <div id="Inner">
+    
+      <h1>Lorem Ipsum</h1>
+      <h4>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h4>
+      <h5>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</h5>
+      
+      
+      <hr>
+      
+      <div id="Content">
+      <div class="boxed"><div id="lipsum">
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod viverra ante. Nullam tristique elementum sem sed tempus. Integer finibus diam id justo volutpat consectetur. Vivamus neque quam, mollis eget dictum a, pulvinar at lacus. In vel aliquet massa, sit amet luctus neque. Sed condimentum pharetra ante, tempor condimentum metus dapibus gravida. Fusce euismod vulputate libero vel convallis. Vestibulum nunc diam, maximus eget facilisis eget, consectetur eget ipsum. Proin eu pharetra quam. In a dignissim massa, euismod tristique orci. Donec facilisis nulla eros, ac suscipit lectus consectetur sit amet. Etiam vel sapien in velit laoreet viverra in ac nulla. Nam libero est, accumsan id finibus ac, mattis in est. Duis nec metus ut mi dictum tincidunt id eu velit. Cras congue dapibus sapien, vel tincidunt ipsum volutpat quis. Curabitur faucibus erat non mauris semper sagittis.
+      </p>
+      <p>
+      Maecenas eget euismod sapien. Aenean sed turpis et velit cursus condimentum. In hac habitasse platea dictumst. Donec ac feugiat velit, eget efficitur odio. Etiam vehicula, massa vel sodales convallis, enim leo efficitur arcu, ut facilisis urna orci non nisi. Nam malesuada ligula a tortor bibendum, sit amet porttitor dolor consequat. Nunc augue arcu, vehicula at purus eget, gravida mattis mauris. Praesent maximus metus at odio condimentum tempus. Suspendisse potenti. Duis dictum ex nec erat imperdiet sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec in metus quis augue ultrices eleifend. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis non risus felis. Vestibulum ut placerat neque, non condimentum enim.
+      </p>
+      <p>
+      Integer elementum fringilla tincidunt. Morbi eget tellus a dolor hendrerit porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam non tempor mi. Vestibulum in erat nulla. Sed vestibulum porttitor efficitur. Integer pretium nisl nunc. Mauris iaculis ligula sit amet sem vulputate, vel lobortis turpis vehicula. Pellentesque placerat fermentum felis placerat maximus.
+      </p>
+      <p>
+      Nam id ultricies sapien. Pellentesque et urna nibh. Curabitur malesuada eros molestie maximus mattis. Suspendisse mattis varius nulla quis hendrerit. Nam dapibus tincidunt mauris at posuere. Aenean consequat nisl nec vulputate vehicula. Fusce a nibh quis elit suscipit ultricies.
+      </p>
+      <p>
+      Morbi rutrum lacus sed ultrices semper. Nam vestibulum turpis urna, et convallis libero maximus in. Donec elementum lacinia tortor, eu sodales diam. Aliquam egestas nisl massa, eget vulputate magna imperdiet non. Quisque non mattis dolor, venenatis rutrum lectus. Praesent enim odio, venenatis a suscipit nec, aliquet non sapien. Vivamus rutrum nisi nec ipsum laoreet, facilisis commodo tortor tristique. Duis ut dictum urna. Aliquam aliquet lacinia nisi id pellentesque. Cras finibus leo orci, vel euismod lacus faucibus non. Morbi imperdiet lacinia ligula eget tempus. Mauris rhoncus malesuada placerat. Integer consectetur porta tellus nec bibendum. Phasellus rutrum urna sit amet tincidunt facilisis.
+      </p></div>
+      <div id="generated">Generated 5 paragraphs, 446 words, 3073 bytes of <a href="https://www.lipsum.com/" title="Lorem Ipsum">Lorem Ipsum</a></div>
+      </div>
+      
+      <hr>
+      
+      
+      </div>
+
+      <div id="Inner">
+    
+        <h1>Lorem Ipsum</h1>
+        <h4>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h4>
+        <h5>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</h5>
+        
+        
+        <hr>
+        
+        <div id="Content">
+        <div class="boxed"><div id="lipsum">
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod viverra ante. Nullam tristique elementum sem sed tempus. Integer finibus diam id justo volutpat consectetur. Vivamus neque quam, mollis eget dictum a, pulvinar at lacus. In vel aliquet massa, sit amet luctus neque. Sed condimentum pharetra ante, tempor condimentum metus dapibus gravida. Fusce euismod vulputate libero vel convallis. Vestibulum nunc diam, maximus eget facilisis eget, consectetur eget ipsum. Proin eu pharetra quam. In a dignissim massa, euismod tristique orci. Donec facilisis nulla eros, ac suscipit lectus consectetur sit amet. Etiam vel sapien in velit laoreet viverra in ac nulla. Nam libero est, accumsan id finibus ac, mattis in est. Duis nec metus ut mi dictum tincidunt id eu velit. Cras congue dapibus sapien, vel tincidunt ipsum volutpat quis. Curabitur faucibus erat non mauris semper sagittis.
+        </p>
+        <p>
+        Maecenas eget euismod sapien. Aenean sed turpis et velit cursus condimentum. In hac habitasse platea dictumst. Donec ac feugiat velit, eget efficitur odio. Etiam vehicula, massa vel sodales convallis, enim leo efficitur arcu, ut facilisis urna orci non nisi. Nam malesuada ligula a tortor bibendum, sit amet porttitor dolor consequat. Nunc augue arcu, vehicula at purus eget, gravida mattis mauris. Praesent maximus metus at odio condimentum tempus. Suspendisse potenti. Duis dictum ex nec erat imperdiet sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec in metus quis augue ultrices eleifend. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis non risus felis. Vestibulum ut placerat neque, non condimentum enim.
+        </p>
+        <p>
+        Integer elementum fringilla tincidunt. Morbi eget tellus a dolor hendrerit porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam non tempor mi. Vestibulum in erat nulla. Sed vestibulum porttitor efficitur. Integer pretium nisl nunc. Mauris iaculis ligula sit amet sem vulputate, vel lobortis turpis vehicula. Pellentesque placerat fermentum felis placerat maximus.
+        </p>
+        <p>
+        Nam id ultricies sapien. Pellentesque et urna nibh. Curabitur malesuada eros molestie maximus mattis. Suspendisse mattis varius nulla quis hendrerit. Nam dapibus tincidunt mauris at posuere. Aenean consequat nisl nec vulputate vehicula. Fusce a nibh quis elit suscipit ultricies.
+        </p>
+        <p>
+        Morbi rutrum lacus sed ultrices semper. Nam vestibulum turpis urna, et convallis libero maximus in. Donec elementum lacinia tortor, eu sodales diam. Aliquam egestas nisl massa, eget vulputate magna imperdiet non. Quisque non mattis dolor, venenatis rutrum lectus. Praesent enim odio, venenatis a suscipit nec, aliquet non sapien. Vivamus rutrum nisi nec ipsum laoreet, facilisis commodo tortor tristique. Duis ut dictum urna. Aliquam aliquet lacinia nisi id pellentesque. Cras finibus leo orci, vel euismod lacus faucibus non. Morbi imperdiet lacinia ligula eget tempus. Mauris rhoncus malesuada placerat. Integer consectetur porta tellus nec bibendum. Phasellus rutrum urna sit amet tincidunt facilisis.
+        </p></div>
+        <div id="generated">Generated 5 paragraphs, 446 words, 3073 bytes of <a href="https://www.lipsum.com/" title="Lorem Ipsum">Lorem Ipsum</a></div>
+        </div>
+        
+        <hr>
+        
+        
+        </div>
+
+
+  <script src="js/headtrackr.js"></script>
+  <script src="js/track.js"></script>
+</body>
+
+</html>
